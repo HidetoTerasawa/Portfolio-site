@@ -1,0 +1,234 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(84, 88, 87);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section {
+  padding: 80px 0;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 3px;
+  background-color: #333;
+}
+
+.hero-section {
+  display: flex; /* Flexboxを有効化 */
+  flex-direction: column; /* 縦方向に配置 */
+  justify-content: flex-start; /* 上寄せ */
+  align-items: center; /* 水平方向の中央揃え */
+  height: 100vh; /* セクション全体の高さを画面全体に設定 */
+  padding-top: 10%; /* 上部に余白を追加 */
+  background-image: url("画像素材集/琵琶湖　ヒーローセクション.JPG"); /* 背景画像を設定（必要に応じて） */
+  background-size: cover; /* 背景画像をセクション全体に拡大 */
+  background-position: center; /* 背景画像を中央に配置 */
+  background-repeat: no-repeat; /* 背景画像を繰り返さない */
+  color: white; /* テキストを白に設定 */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* テキストに影を追加して読みやすくする */
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #555;
+}
+.skill-bar {
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #333;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #090707;
+  background-color: #000000;
+  color: #ffffff;
+}
+#last-updated {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.fixed-size-img {
+  border: solid; /* 枠線 */
+  width: 350px; /* 固定幅 */
+  height: 250px; /* 固定高さ */
+}
+
+.size-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* スライダーのスタイル */
+.slider-container {
+  position: relative;
+  border: solid; /* 枠線 */
+  width: 350px; /* 固定幅 */
+  height: 250px; /* 固定高さ */
+  overflow: hidden;
+}
+.slider-container img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover; /* 画像をセクション全体に拡大 */
+  object-position: center; /* 画像を中央に配置 */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ...既存のスタイル... */
+/* スマホ用のスタイル */
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: contain; /* 背景画像を縦横比を保ったまま表示 */
+    background-position: top; /* 背景画像を上部に配置 */
+    height: auto; /* セクションの高さを自動調整 */
+    padding-top: 20%; /* 上部の余白を調整 */
+    padding-bottom: 20%; /* 下部の余白を追加 */
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; /* タイトルのフォントサイズを調整 */
+  }
+
+  .hero-section p {
+    font-size: 1rem; /* 説明文のフォントサイズを調整 */
+  }
+  table {
+    min-width: 1200px; /* 必要に応じて最小幅を設定 */
+  }
+}
+/* タブレット用のスタイル */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    background-size: cover; /* 背景画像をセクション全体に拡大 */
+    background-position: center; /* 背景画像を中央に配置 */
+    height: 80vh; /* セクションの高さを画面の80%に設定 */
+    padding-top: 10%; /* 上部の余白を調整 */
+    padding-bottom: 10%; /* 下部の余白を追加 */
+  }
+
+  .hero-section h1 {
+    font-size: 3rem; /* タイトルのフォントサイズを調整 */
+  }
+
+  .hero-section p {
+    font-size: 1.25rem; /* 説明文のフォントサイズを調整 */
+  }
+  table {
+    min-width: 1200px; /* 必要に応じて最小幅を設定 */
+  }
+}
