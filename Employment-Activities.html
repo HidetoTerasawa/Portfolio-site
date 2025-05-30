@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>経歴</title>
+    <title>就活ページ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="Image/logo.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -11,92 +11,166 @@
   <body class="bg-gray-100 text-gray-800">
     <header class="bg-gray-800 text-white py-4">
       <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-bold">経歴</h1>
+        <h1 class="text-3xl font-bold">就活ページ</h1>
       </div>
     </header>
 
+    <!-- ⭐️ナビゲーションバー -->
+    <nav class="bg-white shadow mb-8">
+      <div
+        class="container mx-auto px-4 py-2 flex flex-wrap justify-center gap-4"
+      >
+        <a
+          href="index.html"
+          class="text-gray-700 hover:text-blue-600 font-semibold"
+          >メインページへ戻る</a
+        >
+        <!-- ...既存のナビゲーションリンク... -->
+        <a
+          href="#basic-info"
+          class="text-gray-700 hover:text-blue-600 font-semibold"
+          >基本情報</a
+        >
+        <a
+          href="#education"
+          class="text-gray-700 hover:text-blue-600 font-semibold"
+          >学歴</a
+        >
+        <a
+          href="#work-experience"
+          class="text-gray-700 hover:text-blue-600 font-semibold"
+          >職歴</a
+        >
+
+        <a href="#faq" class="text-gray-700 hover:text-blue-600 font-semibold"
+          >Q&A</a
+        >
+      </div>
+    </nav>
+
     <main class="container mx-auto px-4 py-8">
-      <!-- ⭐️職歴セクション -->
-      <section id="work-experience" class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4 text-center">職歴</h2>
-        <div class="table-container">
-          <div class="overflow-x-auto">
-            <table class="border border-gray-300">
-              <thead>
-                <tr class="bg-gray-200">
-                  <th class="border-gray-300 px-4 py-2">職種</th>
-                  <th class="border border-gray-300 min-w-[100px]">期間</th>
-                  <th class="border border-gray-300 min-w-[100px]">雇用形態</th>
-                  <th class="border border-gray-300 px-4 py-2">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="border border-gray-300 px-4 py-2">
-                    パソコンインストラクター
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">
-                    2024年7月～現在
-                  </td>
-                  <td class="border border-gray-300">アルバイト</td>
-                  <td class="border border-gray-300">
-                    業務内容は、初心者向けのパソコン操作指導です。具体的には、パソコンやスマートフォンの基礎的な操作に加え、Excel・Word・PowerPointなどのオフィスソフトや、動画・画像編集ソフトなどのアプリケーションの使い方の補助を行いました。
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border border-gray-300 px-4 py-2">
-                    不動産賃貸仲介業
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">
-                    2023年5月～2024年7月
-                  </td>
-                  <td class="border border-gray-300">アルバイト</td>
-                  <td>
-                    お客様の物件案内や契約書の作成、写真撮影とデータ入力を担当しました。初めてパソコンを本格的に扱う業務でしたが、今までの学習を活かし、業務をスムーズに進めることができました。
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border border-gray-300 px-4 py-2">
-                    自動車製造（工場）
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">
-                    2020年4月〜2021年5月
-                  </td>
-                  <td class="border border-gray-300 px-3">派遣社員</td>
-                  <td class="border border-gray-300">
-                    自動車の製造ラインを担当しました。業務内容は、自動車の継ぎ目や隙間にシーリング剤を埋める流れ作業です。4年間の学費や年金、そしてその間にかかる生活費を貯金できたため、契約期間の満了に伴い退職しました。そして現在通っている東京通信大学へ進学しました。
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border border-gray-300 px-4 py-2">
-                    和菓子製造（工場）
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">
-                    2017年4月〜2020年3月
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">正社員</td>
-                  <td class="border border-gray-300">
-                    高校卒業後に入社しました。業務内容は、大型機器のオペレーターやメンテナンス、フォークリフトを使用した在庫管理、さらにパートや派遣スタッフのライン業務の補助などです。この時期に大学へ進学したいという思いが芽生え、学費を最短で稼ぐために退職し、より高い給与の仕事を探しました。
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border border-gray-300 px-4 py-2">
-                    飲食店（ラーメン屋）
-                  </td>
-                  <td class="border border-gray-300 px-4 py-2">
-                    2014年5月〜2017年2月
-                  </td>
-                  <td class="border border-gray-300">アルバイト</td>
-                  <td class="border border-gray-300">
-                    高校3年の間、働かせていただきました。人生で初めての仕事でしたが、長く続けたこともあり、接客・調理・レジ業務など、店舗内のすべてのポジションを任されました。また、短時間ではありますが、一人で店舗を切り盛りすることもありました。
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- ⭐️基本情報セクション -->
+      <section id="basic-info" class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4 text-center">基本情報</h2>
+        <!-- 名前・プロフィール写真（折り畳み） -->
+        <div class="border border-gray-300 rounded-lg mb-4">
+          <button
+            class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
+          >
+            名前・プロフィール写真
+          </button>
+          <div
+            class="hidden px-4 py-2 flex flex-col md:flex-row items-center gap-8"
+          >
+            <div class="mb-4 md:mb-0">
+              <!-- 履歴書写真の枠 -->
+              <div
+                class="w-32 h-40 border-2 border-gray-400 rounded overflow-hidden flex items-center justify-center bg-white"
+              >
+                <img
+                  src="Image/photograph.png"
+                  alt="履歴書写真"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+            <div>
+              <ul class="space-y-2">
+                <li>
+                  <span class="font-bold">氏名：</span>寺沢秀人（テラサワ
+                  ヒデト）
+                </li>
+                <li><span class="font-bold">国籍：</span>日本</li>
+                <li>
+                  <span class="font-bold">生年月日：</span>1998年9月10日（26歳）
+                </li>
+                <li>
+                  <span class="font-bold">現住所：</span>滋賀県 彦根市（シガケン
+                  ヒコネシ）
+                </li>
+                <li>
+                  <span class="font-bold">最終学歴：</span>東京通信大学
+                  情報マネジメント学部 情報マネジメント学科（2026年3月卒業予定）
+                </li>
+                <li>
+                  <span class="font-bold">身体的特徴：</span>身長164cm,体重60kg
+                </li>
+                <li><span class="font-bold">扶養：</span>無し</li>
+
+                <li><span class="font-bold">大きな病歴：</span>無し</li>
+                <li>
+                  <span class="font-bold">連絡先：</span
+                  >aa4916716578gs781@boxfi.uk
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 保有資格（折り畳み） -->
+        <div class="border border-gray-300 rounded-lg mb-4">
+          <button
+            class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
+          >
+            保有資格
+          </button>
+          <div class="hidden px-4 py-2">
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>2017/3　普通自動車免許第一種　取得</li>
+              <li>2022/11　Microsoft Office Specialist Excel 2016 Expert</li>
+              <li>2022/11　Microsoft Office Specialist Word 2016 Expert</li>
+              <li>2022/11　Microsoft Office Specialist PowerPoint 2016</li>
+              <li>2024/9　日商PC検定 データ活用2級</li>
+              <li>2024/9　日商PC検定 文書作成2級</li>
+              <li>2024/9　日商PC検定 プレゼン資料作成3級</li>
+              <li>2024/10　2次元CAD利用技術者試験（基礎）</li>
+              <li>2024/11　プログラミング英語検定 アドバンスト</li>
+              <li>2025/1　日商簿記3級</li>
+              <li>2025/2　Responsive Web Design-freeCodeCamp</li>
+              <li>
+                2025/3　JavaScript Algorithms and Data Structures-freeCodeCamp
+              </li>
+              <li>
+                2025/4　Google Skillshop:オフライン販売促進（有効期限:
+                2026年4月1日）
+              </li>
+              <li>2025/4　Scientific Computing with Python-freeCodeCamp</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 希望条件（折り畳み） -->
+        <div class="border border-gray-300 rounded-lg mb-4">
+          <button
+            class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
+          >
+            希望条件
+          </button>
+          <div class="hidden px-4 py-2">
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>
+                <span class="font-bold">志望業界：</span
+                >IT・通信、インターネット関連・ゲーム・アプリ関連、ソフトウェア・情報通信
+              </li>
+              <li>
+                <span class="font-bold">希望職種：</span
+                >システムエンジニア・プログラマ、Webエンジニア、ネットワークエンジニア
+              </li>
+              <li>
+                <span class="font-bold">希望勤務地：</span
+                >北海道、東北、九州、離島を除く都道府県。就職を機に引っ越しを考えています。
+              </li>
+              <li><span class="font-bold">転居/転勤可否：</span>可能</li>
+              <li>
+                <span class="font-bold">就職活動理由：</span
+                >大学卒業に伴う就職活動
+              </li>
+              <li>
+                <span class="font-bold">備考：</span
+                >私は今までにIT企業に勤めた経験はございませんが、IT業界への強い興味を持っており、大学の授業や自己学習でプログラミングやネットワーク関連の知識を学んでいます。長く働ける会社を探しています。よろしくお願いします！<br />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-
       <!-- ⭐️学歴セクション -->
       <section id="education">
         <h2 class="text-2xl font-semibold mb-4 text-center">学歴</h2>
@@ -145,6 +219,113 @@
           </table>
         </div>
       </section>
+      <!-- ⭐️職歴セクション -->
+      <section id="work-experience" class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4 text-center">職歴</h2>
+        <div class="table-container">
+          <div class="overflow-x-auto">
+            <table class="border border-gray-300">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="border-gray-300 px-4 py-2">職種</th>
+                  <th class="border border-gray-300 min-w-[100px]">期間</th>
+                  <th class="border border-gray-300 min-w-[100px]">雇用形態</th>
+                  <th class="border border-gray-300 px-4 py-2">備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">
+                    パソコンインストラクター
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">
+                    2024年7月～現在
+                  </td>
+                  <td class="border border-gray-300">アルバイト</td>
+                  <td class="border border-gray-300">
+                    [事業内容]　パソコン教室運営業<br />
+                    [担当業務]　パソコン操作の指導、電話対応、データ入力業務<br />
+                    [概要]<br />
+                    現在働いております。業務内容は初心者向けのパソコン操作指導です。具体的には、パソコンやスマートフォンの基礎的な操作に加え、Excel・Word・PowerPointなどのオフィスソフトや、動画・画像編集ソフトなどのアプリケーションの使い方の補助を行いました。<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">
+                    不動産賃貸仲介業
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">
+                    2023年5月～2024年7月
+                  </td>
+                  <td class="border border-gray-300">アルバイト</td>
+                  <td>
+                    [事業内容]　不動産賃貸仲介業<br />
+                    [担当業務]　営業補佐、物件案内、データ入力業務、電話対応、契約書類の作成<br />
+                    [概要]<br />
+                    大学3回生のときに働いていました。業務内容はお客様の物件案内や契約書の作成、物件の写真撮影とデータ入力を担当しました。<br />
+                    [実績]<br />
+                    ・お客様からいただいた質問をリスト化し、対応マニュアルを作成。<br />
+                    ・Google Mapを活用した業務の最適化を提案。<br />
+                    ・Googleマイマップで大学ごとの周辺施設をまとめた地図を作成。<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">
+                    自動車製造（工場）
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">
+                    2020年4月〜2021年5月
+                  </td>
+                  <td class="border border-gray-300 px-3">派遣社員</td>
+                  <td class="border border-gray-300">
+                    [事業内容]　自動車製造業<br />
+                    [担当業務]　製造ライン（シーラー工程）、機器のメンテナンス、清掃<br />
+                    [概要]<br />
+                    自動車の製造ラインを担当しました。業務内容は、ライン上を流れてくる自動車駆体の継ぎ目や隙間にシーリング剤を埋めていく作業です。<br />
+                    [実績] <br />
+                    ・廃棄予定の特注機械部品を修理して費用削減した。<br />
+                    ・機械メンテナンスの役割分担を提案し、労働時間を短縮した。<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">
+                    和菓子製造（工場）
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">
+                    2017年4月〜2020年3月
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">正社員</td>
+                  <td class="border border-gray-300">
+                    [事業内容]　和菓子製造業<br />
+                    [担当業務]　機械のオペレーター、製造ライン、在庫管理<br />
+                    [概要]<br />
+                    高校卒業後に入社しました。業務内容は、大型機器のオペレーターやメンテナンス、フォークリフトを使用した在庫管理、さらにパートや派遣スタッフのライン業務の補助などです。<br />
+                    [実績]<br />
+                    ・自作の振動抑制部品を取り付け、大型機械の生産ロスを減少させた。<br />
+                    ・製品の製造過程の順番を見直し、頻発していたケアレスミスが発生しないようにした。<br />
+                    ・機械エラー対応マニュアルを作成し、派遣の方達が各々エラー対応できるようにした。<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">
+                    飲食店（ラーメン屋）
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2">
+                    2014年5月〜2017年2月
+                  </td>
+                  <td class="border border-gray-300">アルバイト</td>
+                  <td class="border border-gray-300">
+                    [事業内容]　飲食業<br />
+                    [担当]　接客・調理<br />
+                    [概要]<br />
+                    高校3年の間、働かせていただきました。人生で初めての仕事でしたが、長く続けたこともあり、接客・調理・レジ業務など、店舗内のすべてのポジションを任されました。また、短時間ではありますが、一人で店舗を切り盛りすることもありました。<br />
+                    [実績]　接客のスキルを身につけ、調理のスピードと品質を向上させました。<br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
       <!--⭐️Q＆Aセクション-->
       <section id="faq" class="mb-12 mt-12">
@@ -162,7 +343,8 @@
               探してるのはIT業界のみですか？
             </button>
             <div class="hidden px-4 py-2">
-              IT業界のみです。大学へ進学する前から決めていました。
+              今のところIT業界のみで探しています。
+              大学へ進学する前から決めていました。
             </div>
           </div>
 
@@ -208,9 +390,9 @@
                 <div class="hidden px-4 py-2">
                   <p>
                     事業内容は、システムインテグレーションを中心としたITソリューションの提供です。<br />
-                    IT技術を活用し、企業の業務効率化や課題解決を支援するサービスを展開しているかどうかを重要視しています。
+                    IT技術を活用し、企業の業務効率化や課題解決を支援するサービスを展開しているかどうかを重要視しています。<br />
                     業務内容は、システムやアプリ開発、インフラ構築・保守・運営などをやりたいと考えています。<br />
-                    現場で働く方々の意見に寄り添った仕組みを提供できるような人材になりたいと考えています。
+                    現場で働く方々の意見に寄り添った仕組みを提供できるような人材になることが目標です。
                   </p>
                 </div>
               </div>
@@ -265,9 +447,9 @@
           </div>
         </div>
 
-        <!-- 🔴学生生活について -->
+        <!-- 🔴大学生活について -->
         <div class="mb-8">
-          <h3 class="text-xl font-semibold mb-4">学生生活について</h3>
+          <h3 class="text-xl font-semibold mb-4">大学生活について</h3>
 
           <!-- 🟡🟣大学ではどのようなことを学習しましたか？-->
           <div class="border border-gray-300 rounded-lg mb-4">
@@ -291,9 +473,46 @@
                   具体的にはどのような内容ですか？
                 </button>
                 <div class="hidden px-4 py-2">
-                  <p>あ</p>
+                  <p>
+                    情報分野をメインに学習しますが、それ以外にも専門的にというよりかは基礎的な内容を学習します。<br />
+                    通信技術、機械学習、人工知能、データサイエンスなどは、どのような仕組みで成り立っていて実際に社会にどのように使われているのかというのを学習します。
+                    プログラミング演習では主にJavaを使ってアルゴリズムを組んでみたり、サーバー構築などをやりました。
+                    統計学では、データ分析の基礎や確率論を学び、実際のデータを使って分析を行う演習もあります。
+                    経営学では、マーケティング戦略や組織設計の基本的な理論を学びます。
+                    会計学では、簿記の基礎を学び、財務諸表の読み方や作成方法を習得します。
+                    知的財産に関する取り扱いでは、特許権や著作権の基本的な知識を学び、ビジネスにおける法的な側面について理解を深めます。
+                  </p>
                 </div>
               </div>
+              <!-- 🟣一番楽しかった事はなんですか？ -->
+              <div class="mt-4 pl-4 border-l-2 border-gray-300">
+                <button
+                  class="w-full text-left px-4 py-2 bg-gray-100 font-semibold focus:outline-none"
+                >
+                  一番楽しかった事はなんですか？
+                </button>
+                <div class="hidden px-4 py-2">
+                  <p>
+                    プログラミング演習です。
+                    出題された課題に対してコードを記述するのですが、最初は3行のコードを書くのに半日以上かかり、何度も思考錯誤を繰り返していました。
+                    悩み抜いて書いたコードが思い通りに動いたときはとても達成感がありました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🟡東京通信大学はどのような形態で授業を受けられていますか？ -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button
+              class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
+            >
+              東京通信大学はどのような形態で授業を受けられていますか？
+            </button>
+            <div class="hidden px-4 py-2">
+              オンデマンドで授業を受けています。<br />
+              スクーリング不要で私の場合は一度も大学に行ったことがありません。
+              他の生徒とはオンライン上でソースコードを評価し合ったり、大学から出された課題に対してディスカッションしたりして交流しています。
             </div>
           </div>
 
@@ -323,20 +542,6 @@
               キャリア形成です。<br />
               IT系の仕事に就くこと自体は、大学へ行かなくても、一人で長時間勉強すれば目指せるだろうと考えていました。しかし、自分の選択肢を増やすというのを考えると、大学卒業という資格を持っておくことが重要だと思い、進学を決めました。
               実際、現在働いているアルバイトも「大学卒業者」または「大学在学中の人」のみを採用していたため、大学に通うことでその恩恵を受けたことになります。
-            </div>
-          </div>
-
-          <!-- 🟡東京通信大学はどのような形態で授業を受けられていますか？ -->
-          <div class="border border-gray-300 rounded-lg mb-4">
-            <button
-              class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
-            >
-              東京通信大学はどのような形態で授業を受けられていますか？
-            </button>
-            <div class="hidden px-4 py-2">
-              オンデマンドで授業を受けています。<br />
-              スクーリング不要で私の場合は一度も大学に行ったことがありません。
-              他の生徒とはオンライン上でソースコードを評価し合ったり、大学から出された課題に対してディスカッションしたりして交流しています。
             </div>
           </div>
 
@@ -407,14 +612,14 @@
               今まで勤めた企業の入社理由と退職理由を教えて下さい。
             </button>
             <div class="hidden px-4 py-2">
-              ●パソコンインストラクター（アルバイト）約1年<br />
-              入社理由：よりパソコンに関する知識を深めたいと思ったからです。<br />
+              ●パソコンインストラクター（アルバイト）現在<br />
+              入社理由：よりITやパソコンに関する知識を深めたいと思ったからです。<br />
               ●不動産賃貸仲介業（アルバイト）約1年2ヶ月<br />
               入社理由：パソコンを扱う業務に携わり、経験を積みたかったからです。
               IT系に特化したアルバイトを探してましたが、私の地元だとそういった求人が無かったため、とりあえずパソコンを扱う仕事で働くことに決めました。<br />
               退職理由：よりパソコンを扱う業務に特化した仕事に携わり、就職までに実務的なスキルを身につけたいと思ったからです。<br />
               ●自動車製造（派遣社員）約1年3ヶ月<br />
-              入社理由：大学に通うための学費を貯めるためです。<br />
+              入社理由：大学に通うための学費を貯めるためです。どれだけの期間働くのかは面接の際に伝えております。<br />
               退職理由：貯金が溜まったので期間満了に伴い退職しました。<br />
               ●和菓子製造（正社員）約3年<br />
               入社理由：高校時代に飲食店でアルバイトをしていたのもあり、食べ物に関わる仕事をしたいと思ったからです。<br />
@@ -675,9 +880,8 @@
             </button>
             <div class="hidden px-4 py-2">
               派遣で働いた自動車工場の仕事が大変でした。<br />
-              給与は一般的な肉体労働で稼げる仕事の中ではかなり良い方でしたが、それに見合うだけの厳しい仕事で、
-              10人程いた同期も1年後には誰もおらず私1人だけでした。
-              将来のために必要な痛みだと理解していたため、1人だろうが関係なく最後までやり抜きました。
+              給与は一般的な肉体労働で稼げる仕事の中ではかなり良い方でしたが、それに見合うだけの大変な業務でした。
+              しかし、将来のために必要な痛みだと理解していたため、最後までやり抜きました。
             </div>
           </div>
 
@@ -750,6 +954,22 @@
             </div>
           </div>
 
+          <!-- 🟡長所と短所を教えて下さい -->
+          <div class="border border-gray-300 rounded-lg mb-4">
+            <button
+              class="w-full text-left px-4 py-2 bg-gray-200 font-semibold focus:outline-none"
+            >
+              長所と短所を教えて下さい。
+            </button>
+            <div class="hidden px-4 py-2">
+              私の長所は、多彩な経験から培った柔軟な適応力にあります。<br />
+              異なる業界での勤務を通じ、それぞれの環境に適したスキルを迅速に習得してきました。
+              また、各職場でさまざまな役割を担う中で育まれた問題解決能力は、私の大きな強みです。<br />
+              一方短所はIT分野での実務経験が不足している点です。<br />
+              これまでの職歴は主に製造業やサービス業に偏っており、IT関連の実際の業務経験が十分でないため、今後この分野でのスキルアップと経験の積み重ねが必要だと認識しています。
+            </div>
+          </div>
+
           <!-- 🟡あなたの強みと具体的なエピソードはありますか？ -->
           <div class="border border-gray-300 rounded-lg mb-4">
             <button
@@ -780,7 +1000,7 @@
               しかし、どれも時間ばかりが過ぎてしまい、知識が身についているという実感を得ることができませんでした。
               勉強を続けているうちに、私と同じような状況から学習の軸を確立された方のブログ記事を見つけました。
               その方の記事を参考にしながら学習を進めたことで、ようやくプログラミング学習の方向性を定めることができました。
-              この経験から、新しいことに挑戦する際は、まず自分と同じようなステータスの先駆者を探し、その方を参考に軸形成していくことを意識するようになりました。
+              この経験から、新しいことに挑戦する際は、まず自分と同じようなステータスの先駆者を探すか、身近にいる経験者の方を参考に軸形成していくことを意識するようになりました。
             </div>
           </div>
 
@@ -820,7 +1040,7 @@
               成長にするのに大事だと思ったことはなんですか？
             </button>
             <div class="hidden px-4 py-2">
-              自分の行動ログを取り続けることと、成功している人の真似をすることです。<br />
+              自分の行動ログを取り続けることと、経験者を参考にすることです。<br />
               ログを取ることで、自分を客観視でき、改善すべき点や良かった点が明確になり、新たなアプローチを見いだせることがあります。
               また、特定の人物から直接学んだわけではありませんが、基本的に自分以外の人は誰もが、自分より優れた点を持っているはずだと考えています。
               そのため、その優れた点を見つけて積極的に真似し、学びに活かすよう努めています。
@@ -970,9 +1190,9 @@
                 </button>
                 <div class="hidden px-4 py-2">
                   <p>
-                    短期で働いた教材販売代理店で役に立ちました。<br />
-                    その会社はITリテラシーが低く、情報技術に関する基本的な知識が不足していました。私自身も当時は分からないことが多かったのですが、少しでも役に立ちたいと思い、大学の講義そっちのけで夜な夜なGoogle検索をしながら解決策を探しました。
-                    その地道な努力が実を結び、一般的なオフィスワーカーレベルの助言ができるようになりました。
+                    短期で働いた教材販売代理店では、自分なりに貢献できたことがありました。<br />
+                    その会社では情報技術に関する知識が十分に浸透しておらず、業務の効率化に向けた工夫が求められていました。私自身も当初は分からないことが多かったのですが、「少しでも役に立ちたい」という思いから、大学の講義を後回しにして夜な夜なGoogle検索をしながら解決策を探しました。
+                    試行錯誤を重ねながら知識を身につけていく中で、徐々に一般的なオフィスワーカーレベルの助言ができるようになり、周囲に貢献できたことを実感しました。この経験を通じて、学んだことを活かして周囲の業務を支援することの大切さを学びました。
                   </p>
                 </div>
               </div>
