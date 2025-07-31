@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": false,
+  "html.format.enable": false,
+  "prettier.enable": false,
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "html.validate.scripts": true,
+  "html.validate.styles": false,
+  "html-validate.enable": false,
+  "css.validate": false
+}

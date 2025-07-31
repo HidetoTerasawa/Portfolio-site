@@ -138,18 +138,13 @@ h2 {
   height: 250px; /* 固定高さ */
   overflow: hidden;
 }
-.slider-container img {
-  width: 350px;
-  height: 250px;
-  object-fit: cover; /* 画像をセクション全体に拡大 */
-  object-position: center; /* 画像を中央に配置 */
-}
+
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 
 .prev-btn,
@@ -160,7 +155,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 2px;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
@@ -177,16 +172,6 @@ h2 {
 .prev-btn:hover,
 .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slide {
-  min-width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 /* ...既存のスタイル... */
